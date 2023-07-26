@@ -1,0 +1,13 @@
+<h1>New task</h1>
+
+<%= form_with model: @root do |f| %>
+  <div><%= f.label :title %></div>
+  <div STYLE="margin-bottom:15px"><%= f.text_field :title %></div>
+  <div><%= f.label :details %></div>
+  <div STYLE="margin-bottom:30px"><%= f.text_field :details %></div>
+  <button STYLE="margin-bottom:30px">Create task</button>
+<% end %>
+
+<%= link_to root_path do %>
+  <small> ⃪ Back to list </small>
+<% end %>
